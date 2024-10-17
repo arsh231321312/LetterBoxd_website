@@ -1,12 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-import requests
-from bs4 import BeautifulSoup
-import threading
-import time
-import random
 import mysql.connector
-from FrontEndFunctions import get_random_movie,get_movie_data,load_prev_movie
+from BackEndFunctions import get_random_movie,get_movie_data,load_prev_movie
+
 
 app=Flask(__name__)
 #remember to change the passwordChange to change password forever, right now it is temprorary and resets on server restart
