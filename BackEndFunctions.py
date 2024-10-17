@@ -6,7 +6,6 @@ import threading
 import time
 import random
 import mysql.connector
-import BackEndFunctions
 def load_prev_movie(movieID,emailExists,account,cursor,connection):
     select_query = """
     SELECT director,title,releaseYear,rating,tagline,movie_description,poster_url,trailer,wheretowatch FROM movies
