@@ -21,8 +21,8 @@ def handling_data():
     connection = mysql.connector.connect(
         host="localhost",        # Your host, e.g., localhost or AWS RDS instance
         user="root",    # Your MySQL username
-        password="Sandhu57628136$",# Your MySQL password
-        database="newdata" # The database you want to connect to
+        password="########",# Your MySQL password
+        database="##########" # The database you want to connect to
     )
     cursor = connection.cursor()
     if connection.is_connected():
