@@ -1,11 +1,6 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
-import threading
-import time
 import random
-import mysql.connector
 def load_prev_movie(movieID,emailExists,account,cursor,connection):
     select_query = """
     SELECT director,title,releaseYear,rating,tagline,movie_description,poster_url,trailer,wheretowatch FROM movies
